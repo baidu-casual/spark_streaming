@@ -31,3 +31,8 @@ Apr 09, 2021 4:44:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 7
 Apr 09, 2021 4:44:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 13
+Apr 09, 2021 4:50:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.09 16:53:20 WARN  no build target for: /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/project/metals.sbt[0m
+Apr 09, 2021 4:53:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 39
