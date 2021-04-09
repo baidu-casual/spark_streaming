@@ -40,30 +40,34 @@ class sparkStreamng {
 
     System.setProperty("HADOOP_USER_NAME","hadoop")    
 
-    val transaction_detail_df = spark.readStream
+    val transactionDF = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", kafkaServer)
       .option("subscribe", kafkaTopicName)
       .option("startingOffsets", "earliest")
       .load()
 
-    println("Printing Schema of transaction_detail_df: ")
-    transaction_detail_df.printSchema()
+    println("Printing Schema of transactionDF: ")
+    transactionDF.printSchema()
     /**
       * Lamda Function
       */
       /*
-    transaction_detail_df.writeStream.foreachBatch((batchDf: DataFrame, batchId: Long) => {
+    transactionDF.writeStream.foreachBatch((batchDf: DataFrame, batchId: Long) => {
         batchDf.show(false)
     }).start().awaitTermination()*/
 
-    transaction_detail_df
-                    .writeStream
-                    .format("console")
-                    .outputMode("append")
-                    .foreachBatch(streamingFunction _)
-                    .start()
-                    .awaitTermination()
+    transactionDF
+                .selectExpr("CAST(topic AS STRING)", "CAST(value AS STRING)", "CAST(timestamp AS STRING)")
+                .writeStream
+                .format("kafka")
+                .option("kafka.bootstrap.servers", kafkaServer)
+                .option("topic", kafkaTopicName)
+                .trigger(Trigger.ProcessingTime("1 seconds"))
+                .outputMode("update")
+                .foreachBatch(streamingFunction _)
+                .start()
+                .awaitTermination()
     
     println("\n\n\t\tKafka Demo Application Completed ...\n\n")
   }
@@ -78,3 +82,18 @@ object kafkaStreamingConsumer {
     sS.kafkaConsume()
   }
 }
+
+
+
+/**
+  * val trans_detail_write_stream_1 = transactionDF5
+  .selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
+  .writeStream
+  .format("kafka")
+  .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS_CONS)
+  .option("topic", KAFKA_OUTPUT_TOPIC_NAME_CONS)
+  .trigger(Trigger.ProcessingTime("1 seconds"))
+  .outputMode("update")
+  .option("checkpointLocation", "/tmp/sparkCheckpoint/checkpoint")      // ---------checkpoint used----------
+  .start()
+  */
