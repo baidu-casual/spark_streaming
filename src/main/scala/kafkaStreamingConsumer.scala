@@ -19,37 +19,31 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat
 import org.apache.spark.rdd.RDD*/
 
 class sparkStreamng {
-
-
-
-    def temp1(batchDf: DataFrame, batchId: Long): Unit = {
+  def streamingFunction(batchDf: DataFrame, batchId: Long): Unit = {
+        println("\n\n\t\tBATCH "+batchId+"\n\n")
         batchDf.show(false)
     }
-  def temp2(): Unit = {
-    val conf = new SparkConf().setAppName("Spark4").setMaster("local");
+  def kafkaConsume(kafkaTopicName: String = "testtopic", kafkaServer: String = "localhost:9092"): Unit = {
+    val conf = new SparkConf().setAppName("KAFKA").setMaster("local");
     val sc = new SparkContext(conf)
-    sc.setLogLevel("ERROR")
+    //sc.setLogLevel("ERROR")
     val spark = SparkSession
     .builder()
     .master("local[*]")
-    .appName("Spark Structured Streaming with Kafka Demo")
+    .appName("Spark Kafka Demo")
     .config(conf)
     .getOrCreate()
-    spark.sparkContext.setLogLevel("ERROR")
+    //spark.sparkContext.setLogLevel("ERROR")
     import spark.implicits._
 
-    println("Spark Structured Streaming with Kafka Demo Application Started ...")
-
-    val KAFKA_TOPIC_NAME_CONS = "testtopic"
-    val KAFKA_OUTPUT_TOPIC_NAME_CONS = "outputtopic"
-    val KAFKA_BOOTSTRAP_SERVERS_CONS = "localhost:9092"
+    println("\n\n\t\tKafka Demo Application Started ...\n\n")
 
     System.setProperty("HADOOP_USER_NAME","hadoop")    
 
     val transaction_detail_df = spark.readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS_CONS)
-      .option("subscribe", KAFKA_TOPIC_NAME_CONS)
+      .option("kafka.bootstrap.servers", kafkaServer)
+      .option("subscribe", kafkaTopicName)
       .option("startingOffsets", "earliest")
       .load()
 
@@ -65,20 +59,22 @@ class sparkStreamng {
 
     transaction_detail_df
                     .writeStream
-                    .foreachBatch(temp1 _)
+                    .format("console")
+                    .outputMode("append")
+                    .foreachBatch(streamingFunction _)
                     .start()
                     .awaitTermination()
     
-    println("Spark Structured Streaming with Kafka Demo Application Completed.")
+    println("\n\n\t\tKafka Demo Application Completed ...\n\n")
   }
   
 }
 
 
 //
-object kafka_streaming {  
+object kafkaStreamingConsumer {  
   def main(args: Array[String]): Unit = {
     val sS = new sparkStreamng
-    sS.temp2()
+    sS.kafkaConsume()
   }
 }

@@ -2,10 +2,10 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/target/scala-2.12/classes/main[0m
-[0m[[0m[0mdebug[0m] [0m[0m	main/kafka_streaming.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/target/scala-2.12/classes/main/kafka_streaming.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	main/kafka_streaming$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/target/scala-2.12/classes/main/kafka_streaming$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/kafkaStreamingConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/target/scala-2.12/classes/main/kafkaStreamingConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/kafkaStreamingConsumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/target/scala-2.12/classes/main/kafkaStreamingConsumer$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main/sparkStreamng.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/xs107-bairoy/xenonstack/l2/module4/spark_streaming/target/scala-2.12/classes/main/sparkStreamng.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
