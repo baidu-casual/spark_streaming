@@ -23,17 +23,17 @@ class sparkStreamng {
         println("\n\n\t\tBATCH "+batchId+"\n\n")
         batchDf.show(false)
     }
-  def kafkaConsume(kafkaTopicName: String = "testtopic", kafkaServer: String = "localhost:9092"): Unit = {
+  def kafkaConsume(kafkaTopicName: String = "test", kafkaServer: String = "localhost:9092"): Unit = {
     val conf = new SparkConf().setAppName("KAFKA").setMaster("local");
     val sc = new SparkContext(conf)
-    //sc.setLogLevel("ERROR")
+    sc.setLogLevel("ERROR")
     val spark = SparkSession
     .builder()
     .master("local[*]")
     .appName("Spark Kafka Demo")
     .config(conf)
     .getOrCreate()
-    //spark.sparkContext.setLogLevel("ERROR")
+    spark.sparkContext.setLogLevel("ERROR")
     import spark.implicits._
 
     println("\n\n\t\tKafka Demo Application Started ...\n\n")
