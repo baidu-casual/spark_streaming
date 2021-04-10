@@ -20,7 +20,7 @@
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/3.1.1/spark-sql_2.12-3.1.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.12/3.1.1/spark-streaming_2.12-3.1.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-10_2.12/3.1.1/spark-streaming-kafka-0-10_2.12-3.1.1.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-streams/2.7.0/kafka-streams-2.7.0.jar",
+            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.1.1/spark-avro_2.12-3.1.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-hadoop2.jar",
@@ -68,7 +68,7 @@
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/4.1.1/metrics-json-4.1.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/4.1.1/metrics-graphite-4.1.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jmx/4.1.1/metrics-jmx-4.1.1.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1.jar",
+            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.10.0/jackson-module-scala_2.12-2.10.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8.jar",
@@ -86,9 +86,7 @@
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.1/parquet-hadoop-1.10.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-token-provider-kafka-0-10_2.12/3.1.1/spark-token-provider-kafka-0-10_2.12-3.1.1.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.7.0/kafka-clients-2.7.0.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/connect-json/2.7.0/connect-json-2.7.0.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/rocksdb/rocksdbjni/5.18.4/rocksdbjni-5.18.4.jar",
+            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar",
@@ -104,8 +102,8 @@
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/3.2.0/hadoop-mapreduce-client-jobclient-3.2.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/hadoop/hadoop-annotations/3.2.0/hadoop-annotations-3.2.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5.jar",
+            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar",
+            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/roaringbitmap/shims/0.9.0/shims-0.9.0.jar",
@@ -134,8 +132,6 @@
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.10.1/parquet-encoding-1.10.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.4.0/parquet-format-2.4.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.10.1/parquet-jackson-1.10.1.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/connect-api/2.7.0/connect-api-2.7.0.jar",
-            "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar",
             "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar",
@@ -364,19 +360,19 @@
                     ]
                 },
                 {
-                    "organization": "org.apache.kafka",
-                    "name": "kafka-streams",
-                    "version": "2.7.0",
+                    "organization": "org.apache.spark",
+                    "name": "spark-avro_2.12",
+                    "version": "3.1.1",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "kafka-streams",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-streams/2.7.0/kafka-streams-2.7.0.jar"
+                            "name": "spark-avro_2.12",
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.1.1/spark-avro_2.12-3.1.1.jar"
                         },
                         {
-                            "name": "kafka-streams",
+                            "name": "spark-avro_2.12",
                             "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-streams/2.7.0/kafka-streams-2.7.0-sources.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.1.1/spark-avro_2.12-3.1.1-sources.jar"
                         }
                     ]
                 },
@@ -1165,17 +1161,17 @@
                 {
                     "organization": "com.fasterxml.jackson.core",
                     "name": "jackson-databind",
-                    "version": "2.10.5.1",
+                    "version": "2.10.0",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "jackson-databind",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar"
                         },
                         {
                             "name": "jackson-databind",
                             "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1-sources.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0-sources.jar"
                         }
                     ]
                 },
@@ -1471,51 +1467,17 @@
                 {
                     "organization": "org.apache.kafka",
                     "name": "kafka-clients",
-                    "version": "2.7.0",
+                    "version": "2.6.0",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "kafka-clients",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.7.0/kafka-clients-2.7.0.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar"
                         },
                         {
                             "name": "kafka-clients",
                             "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.7.0/kafka-clients-2.7.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.apache.kafka",
-                    "name": "connect-json",
-                    "version": "2.7.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "connect-json",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/connect-json/2.7.0/connect-json-2.7.0.jar"
-                        },
-                        {
-                            "name": "connect-json",
-                            "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/connect-json/2.7.0/connect-json-2.7.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.rocksdb",
-                    "name": "rocksdbjni",
-                    "version": "5.18.4",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "rocksdbjni",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/rocksdb/rocksdbjni/5.18.4/rocksdbjni-5.18.4.jar"
-                        },
-                        {
-                            "name": "rocksdbjni",
-                            "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/rocksdb/rocksdbjni/5.18.4/rocksdbjni-5.18.4-sources.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0-sources.jar"
                         }
                     ]
                 },
@@ -1777,34 +1739,34 @@
                 {
                     "organization": "com.fasterxml.jackson.core",
                     "name": "jackson-core",
-                    "version": "2.10.5",
+                    "version": "2.10.0",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "jackson-core",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar"
                         },
                         {
                             "name": "jackson-core",
                             "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5-sources.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "com.fasterxml.jackson.core",
                     "name": "jackson-annotations",
-                    "version": "2.10.5",
+                    "version": "2.10.0",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "jackson-annotations",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar"
                         },
                         {
                             "name": "jackson-annotations",
                             "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5-sources.jar"
+                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0-sources.jar"
                         }
                     ]
                 },
@@ -2281,40 +2243,6 @@
                             "name": "parquet-jackson",
                             "classifier": "sources",
                             "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.10.1/parquet-jackson-1.10.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.apache.kafka",
-                    "name": "connect-api",
-                    "version": "2.7.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "connect-api",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/connect-api/2.7.0/connect-api-2.7.0.jar"
-                        },
-                        {
-                            "name": "connect-api",
-                            "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/connect-api/2.7.0/connect-api-2.7.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.fasterxml.jackson.datatype",
-                    "name": "jackson-datatype-jdk8",
-                    "version": "2.10.5",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "jackson-datatype-jdk8",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar"
-                        },
-                        {
-                            "name": "jackson-datatype-jdk8",
-                            "classifier": "sources",
-                            "path": "/home/xs107-bairoy/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5-sources.jar"
                         }
                     ]
                 },
