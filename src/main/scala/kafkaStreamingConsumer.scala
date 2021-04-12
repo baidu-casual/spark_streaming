@@ -37,10 +37,8 @@ class sparkStreamng {
     .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     import spark.implicits._
-
-    
-
-    System.setProperty("HADOOP_USER_NAME","hadoop")    
+    System.setProperty("HADOOP_USER_NAME","hadoop") 
+       
 
     val transactionDF = spark.readStream
                 .format("kafka")
