@@ -38,7 +38,7 @@ class sparkStreamng {
     spark.sparkContext.setLogLevel("ERROR")
     import spark.implicits._
 
-    println("\n\n\t\tKafka Demo Application Started ...\n\n")
+    
 
     System.setProperty("HADOOP_USER_NAME","hadoop")    
 
@@ -78,8 +78,8 @@ class sparkStreamng {
                 .option("checkpointLocation","/tmp/spark/kafkaStreamingConsumer")
                 .start()
                 .awaitTermination()
+    spark.close()
     
-    println("\n\n\t\tKafka Demo Application Completed ...\n\n")
   }
   
 }
@@ -88,8 +88,10 @@ class sparkStreamng {
 //
 object kafkaStreamingConsumer {  
   def main(args: Array[String]): Unit = {
+    println("\n\n\t\tKafka Demo Application Started ...\n\n")
     val sS = new sparkStreamng
     sS.kafkaConsume()
+    println("\n\n\t\tKafka Demo Application Completed ...\n\n")
   }
 }
 
