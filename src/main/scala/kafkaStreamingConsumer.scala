@@ -79,6 +79,58 @@ class sparkStreamng {
     spark.close()
     
   }
+  def kafkaConsumeCSV(kafkaTopicName: String = "test-events", kafkaServer: String = "localhost:9092"): Unit = {
+    val conf = new SparkConf().setAppName("KAFKA").setMaster("local");
+    val sc = new SparkContext(conf)
+    sc.setLogLevel("ERROR")
+    val spark = SparkSession
+    .builder()
+    .master("local[*]")
+    .appName("Spark Kafka Consumer")
+    .config(conf)
+    .getOrCreate()
+    spark.sparkContext.setLogLevel("ERROR")
+    import spark.implicits._
+    System.setProperty("HADOOP_USER_NAME","hadoop") 
+       
+
+    val transactionDF = spark.readStream
+                .format("kafka")
+                .option("kafka.bootstrap.servers", kafkaServer)
+                .option("subscribe", kafkaTopicName)
+                .option("startingOffsets", "earliest")
+                .load()
+
+    println("Printing Schema of transactionDF: ")
+    transactionDF.printSchema()
+    
+    
+    /**
+      * Lamda Function
+      */
+      /*
+    transactionDF.writeStream.foreachBatch((batchDf: DataFrame, batchId: Long) => {
+        batchDf.show(false)
+    }).start().awaitTermination()*/
+    val transactionDFCounts = transactionDF
+              .withWatermark("timestamp", "10 minutes")
+              .groupBy(window($"timestamp", "10 minutes", "5 minutes"),$"value")
+              .count()
+    
+
+    transactionDFCounts
+                .selectExpr("CAST(topic AS STRING)", "CAST(value AS STRING)", "CAST(timestamp AS STRING)")
+                .writeStream
+                .format("console")
+                .trigger(Trigger.ProcessingTime("1 seconds"))
+                .outputMode("update")
+                .foreachBatch(streamingFunction _)
+                .option("checkpointLocation","/tmp/spark/kafkaStreamingConsumer")
+                .start()
+                .awaitTermination()
+    spark.close()
+    
+  }
   
 }
 

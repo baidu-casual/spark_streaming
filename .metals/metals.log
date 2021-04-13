@@ -526,3 +526,11 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.04.13 13:52:30 INFO  time: compiled spark_streaming in 0.68s[0m
 Apr 13, 2021 1:54:01 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+Apr 13, 2021 1:56:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.13 13:58:09 INFO  compiling spark_streaming (1 scala source)[0m
+[0m2021.04.13 13:58:09 INFO  time: compiled spark_streaming in 0.71s[0m
+[0m2021.04.13 14:48:59 INFO  compiling spark_streaming (1 scala source)[0m
+[0m2021.04.13 14:48:59 INFO  time: compiled spark_streaming in 0.66s[0m
+[0m2021.04.13 15:00:01 INFO  compiling spark_streaming (1 scala source)[0m
+[0m2021.04.13 15:00:01 INFO  time: compiled spark_streaming in 0.65s[0m
