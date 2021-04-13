@@ -32,7 +32,7 @@ class sparkStreamng {
     val spark = SparkSession
     .builder()
     .master("local[*]")
-    .appName("Spark Kafka Demo")
+    .appName("Spark Kafka Consumer")
     .config(conf)
     .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
@@ -86,10 +86,10 @@ class sparkStreamng {
 //
 object kafkaStreamingConsumer {  
   def main(args: Array[String]): Unit = {
-    println("\n\n\t\tKafka Demo Application Started ...\n\n")
+    println("\n\n\t\tKafka Consumer Application Started ...\n\n")
     val sS = new sparkStreamng
     sS.kafkaConsume()
-    println("\n\n\t\tKafka Demo Application Completed ...\n\n")
+    println("\n\n\t\tKafka Consumer Application Completed ...\n\n")
   }
 }
 
