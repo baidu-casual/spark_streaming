@@ -25,7 +25,7 @@ class sparkStreamng {
         println("\n\n\t\tBATCH "+batchId+"\n\n")
         batchDf.show(false)
     }
-  def kafkaConsume(kafkaTopicName: String = "test", kafkaServer: String = "localhost:9092"): Unit = {
+  def kafkaConsume(kafkaTopicName: String = "test-events", kafkaServer: String = "localhost:9092"): Unit = {
     val conf = new SparkConf().setAppName("KAFKA").setMaster("local");
     val sc = new SparkContext(conf)
     sc.setLogLevel("ERROR")
@@ -64,7 +64,7 @@ class sparkStreamng {
               //.count()
     
 
-    val temp=transactionDFCounts
+    transactionDFCounts
                 .selectExpr("CAST(topic AS STRING)", "CAST(value AS STRING)", "CAST(timestamp AS STRING)")
                 .writeStream
                 .format("kafka")
